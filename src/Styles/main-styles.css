@@ -1,0 +1,462 @@
+#greeting {
+    -fx-text-fill: white;
+    -fx-font-family: "Euclid Flex";
+    -fx-font-weight: 700;
+    -fx-font-size: 20pt;
+}
+#description {
+    -fx-text-fill: white;
+    -fx-font-family: "Euclid Flex";
+    -fx-font-weight: 300;
+    -fx-text-alignment: center;
+    -fx-font-size: 12pt;
+}
+#signBtn {
+    -fx-font-family: "Euclid Flex";
+    -fx-font-weight: 700;
+    -fx-border-color: white;
+    -fx-border-width: 1;
+    -fx-border-radius:  30;
+    -fx-background-color: transparent;
+    -fx-background-radius: 30;
+    -fx-background-insets: 0;
+}
+#txt {
+    -fx-font-family: "Euclid Flex";
+    -fx-font-weight: 700;
+    -fx-text-fill: white;
+
+}
+
+#signBtn:hover {
+    -fx-border-color: transparent;
+    -fx-background-color: #bb95ff;
+    -fx-text-fill: white;
+    -fx-effect: dropshadow( two-pass-box , #a68cd6, 40, 0.0 , 0 , 0 );
+}
+
+#name {
+    -fx-font-family: "Euclid Flex";
+    -fx-font-weight: 700;
+    -fx-font-size: 20pt;
+    -fx-text-fill: #c8a8ff;
+    -fx-effect: dropshadow( three-pass-box , #c8a8ff, 35 , 0.0 , 0 , 0 )
+}
+#name2 {
+    -fx-font-family: "Euclid Flex";
+    -fx-font-weight: 300;
+    -fx-font-size: 20pt;
+    -fx-text-fill: #c8a8ff;
+    -fx-effect: dropshadow( three-pass-box , #c8a8ff, 35 , 0.0 , 0 , 0 )
+}
+.password-field, .text-field {
+    -fx-background-color: #354483;
+    -fx-font-family: "Euclid Flex";
+    -fx-padding: 0px 50px 0px;
+    -fx-font-weight: 300;
+    -fx-border-width: 0 0 4 0;
+    -fx-border-color: #4c5c9c;
+    -fx-text-fill: #c8a8ff;
+    -fx-font-size: 12pt;
+
+
+    -fx-prompt-text-fill: #4c5c9c;
+    -fx-background-radius: 0 ;
+}
+
+.password-field:focused, .text-field:focused {
+    #email-image:focused;
+    -fx-text-fill: #c8a8ff;
+    -fx-prompt-text-fill: #c8a8ff;
+    -fx-background-color: #354483 ;
+    -fx-border-color: #c8a8ff;
+}
+
+#signInBtn, #delete {
+    -fx-background-radius: 30;
+    -fx-background-color: #bb95ff;
+    -fx-text-fill: white;
+    -fx-effect: dropshadow( two-pass-box , #917dbf, 25, 0.0 , 0 , 0 );
+    -fx-font-family: "Euclid Flex";
+    -fx-font-weight: 700;
+
+}
+
+#signInBtn:hover, #delete:hover {
+    -fx-text-fill: #354483;
+    -fx-background-color: white;
+}
+
+#forgot {
+    -fx-font-family: "Euclid Flex";
+    -fx-font-weight: 700;
+    -fx-text-fill: #787e9e;
+}
+
+#forgot:hover {
+    -fx-text-fill: white;
+}
+
+#leftMenuItem {
+    -fx-background-color: transparent;
+    -fx-alignment: left;
+    -fx-padding: 0 0 0 80;
+    -fx-text-fill: #34427f;
+    -fx-font-size: 12pt;
+    -fx-font-family: "Euclid Flex";
+    -fx-font-weight: 700;
+}
+
+
+
+#leftMenuItem:focused {
+    -fx-background-color: #28386f;
+    -fx-text-fill: #c3a6e8;
+    -fx-border-width: 0 0 0 4;
+    -fx-border-color: #c3a6e8;
+}
+.scroll-pane{
+    -fx-background-color:transparent;
+}
+.scroll-pane > .viewport {
+    -fx-background-color: transparent;
+}
+
+.scroll-bar .increment-button {
+    visibility: hidden;
+}
+
+.scroll-bar .decrement-button {
+    visibility: hidden;
+}
+
+.scroll-bar:vertical {
+    -fx-background-color: transparent;
+}
+
+.scroll-bar:vertical .track-background {
+    visibility: hidden;
+}
+
+.scroll-bar:vertical .track {
+    visibility: hidden;
+}
+
+.scroll-bar:vertical .thumb {
+    -fx-background-color: #34427f;
+}
+
+#item-service {
+    -fx-effect: dropshadow( three-pass-box , rgba(202, 167, 255, 0.5), 30 , 0.0 , 0 , 0 );
+}
+
+#item-service:hover {
+
+}
+
+#title {
+    -fx-font-family: "Euclid Flex";
+    -fx-font-weight: 700;
+    -fx-font-size: 20pt;
+    -fx-text-fill: white;
+    -fx-border-width: 0 6 0 0;
+    -fx-padding: 0 20 0 0;
+    -fx-border-color: #c3a6e8;
+}
+
+
+
+#pers-acc {
+    -fx-background-radius: 30;
+    -fx-background-color: transparent;
+    -fx-opacity: 0.5;
+    -fx-text-fill: white;
+    -fx-font-family: "Euclid Flex";
+    -fx-font-weight: 700;
+}
+
+#pers-acc:selected {
+    -fx-background-radius: 30;
+    -fx-background-color: transparent;
+    -fx-opacity: 1;
+    -fx-text-fill: white;
+    -fx-effect: dropshadow( two-pass-box , #917dbf, 25, 0.0 , 0 , 0 );
+    -fx-font-family: "Euclid Flex";
+    -fx-font-weight: 700;
+    -fx-border-width: 0 0 3 0;
+    -fx-border-color: #c3a6e8;
+}
+
+#rem-date {
+    -fx-text-fill: white;
+    -fx-effect: dropshadow( three-pass-box , #2c263a, 5, 0.0 , 0 , 0 );
+    -fx-font-family: "Euclid Flex";
+    -fx-font-size: 15pt;
+    -fx-font-weight: 700;
+}
+
+#day {
+    -fx-text-fill: white;
+    -fx-effect: dropshadow( three-pass-box , #c8a8ff, 20 , 0.0 , 0 , 0 );
+    -fx-font-family: "Euclid Flex";
+    -fx-font-size: 9pt;
+    -fx-font-weight: 300;
+}
+
+#time {
+    -fx-text-fill: white;
+    -fx-effect: dropshadow( three-pass-box , #c8a8ff, 20 , 0.0 , 0 , 0 );
+    -fx-font-family: "Euclid Flex";
+    -fx-font-size: 15pt;
+    -fx-font-weight: 700;
+}
+
+#title-acc {
+    -fx-text-fill: white;
+    -fx-effect: dropshadow( three-pass-box , #c8a8ff, 20 , 0.0 , 0 , 0 );
+    -fx-font-family: "Euclid Flex";
+    -fx-font-size: 17pt;
+    -fx-font-weight: 700;
+}
+
+#des-acc {
+    -fx-text-fill: white;
+    -fx-opacity: 0.7;
+    -fx-text-alignment: left;
+    -fx-font-family: "Euclid Flex";
+    -fx-font-size: 10pt;
+    -fx-font-weight: 300;
+}
+
+#edit{
+    -fx-opacity: 0.5;
+}
+
+#edit:hover {
+    -fx-opacity: 1;
+    -fx-effect: dropshadow( three-pass-box , #c8a8ff, 20 , 0.0 , 0 , 0 );
+}
+
+.chart-pie {
+    -fx-fill: white;
+    -fx-font-family: "Euclid Flex";
+    -fx-font-size: 10pt;
+    -fx-font-weight: 300;
+    -fx-border-width: 0;
+    -fx-opacity: 0.5;
+    -fx-border-color: white;
+    -fx-border-width: 3px;
+}
+.chart-pie:hover {
+    -fx-opacity: 1;
+    -fx-effect: dropshadow( three-pass-box , #c8a8ff, 20 , 0.0 , 0 , 0 );
+
+}
+.chart-title {
+    -fx-text-fill: white;
+    -fx-font-family: "Euclid Flex";
+    -fx-font-weight: 700;
+    -fx-font-size: 16pt;
+    -fx-padding: 30 0 0 0;
+    -fx-effect: dropshadow( three-pass-box , #a58ad2, 30 , 0.0 , 0 , 0 );
+}
+.chart-pie-label-line {
+    -fx-stroke: white;
+    -fx-fill: white;
+}
+
+.chart-pie-label { /*this is what you need for labels*/
+    -fx-fill: white;
+    -fx-font-size: 1em;
+
+
+}
+
+#stat-descr {
+    -fx-text-fill: white;
+    -fx-font-family: "Euclid Flex";
+    -fx-font-weight: 300;
+    -fx-font-size: 10pt;
+    -fx-effect: dropshadow( two-pass-box , rgba(0, 0, 0, 0.26), 5, 0.0 , 0 , 0 );
+}
+
+#stat-num {
+    -fx-text-fill: white;
+    -fx-font-family: "Euclid Flex";
+    -fx-font-weight: 700;
+    -fx-font-size: 17 pt;
+
+    -fx-effect: dropshadow( two-pass-box , rgba(0, 0, 0, 0.26), 5, 0.0 , 0 , 0 );
+}
+
+#bg-st {
+    -fx-effect: dropshadow( three-pass-box , rgba(201, 168, 255, 0.39), 20 , 0.0 , 0 , 0 );
+}
+
+#next {
+    -fx-background-radius: 30;
+
+    -fx-font-family: "Euclid Flex";
+    -fx-font-weight: 700;
+    -fx-text-fill: #354483;
+    -fx-background-color: white;
+    -fx-opacity: 0.3;
+}
+
+
+#next:hover {
+    -fx-opacity: 1;
+}
+
+.scene:pressed {
+    -fx-opacity: 0.5;
+}
+
+#name-review {
+    -fx-font-family: "Euclid Flex";
+    -fx-font-weight: 700;
+    -fx-text-fill: white;
+    -fx-font-size: 12pt;
+    -fx-effect: dropshadow( three-pass-box , #9079b8, 20 , 0.0 , 0 , 0 );
+}
+
+#date-review {
+    -fx-font-family: "Euclid Flex";
+    -fx-font-weight: 300;
+    -fx-text-fill: white;
+    -fx-font-size: 9pt;
+    -fx-effect: dropshadow( three-pass-box , #9079b8, 20 , 0.0 , 0 , 0 );
+}
+
+#mark-review {
+    -fx-font-family: "Euclid Flex";
+    -fx-font-weight: 300;
+    -fx-text-fill: white;
+    -fx-font-size: 10pt;
+    -fx-effect: dropshadow( three-pass-box , #9079b8, 20 , 0.0 , 0 , 0 );
+}
+
+#review-lbl {
+    -fx-font-family: "Euclid Flex";
+    -fx-font-weight: 300;
+    -fx-text-fill: white;
+    -fx-font-size: 10pt;
+    -fx-alignment: left;
+}
+
+#bonus {
+    -fx-font-family: "Euclid Flex";
+    -fx-font-weight: 700;
+    -fx-text-fill: white;
+    -fx-font-size: 12pt;
+    -fx-border-width: 2;
+    -fx-border-color: white;
+    -fx-padding: 3 10 3 10;
+    -fx-border-radius: 20;
+    -fx-effect: dropshadow( three-pass-box , #b598e7, 20 , 0.0 , 0 , 0 );
+}
+
+#chartline {
+    -fx-padding: 10px;
+    -fx-background-color: rgba(24, 38, 81, 0.25);
+    -fx-background-radius: 20;
+    -fx-border-width: 0 0 3 0;
+    -fx-border-color:  #ddbaff;
+    -fx-border-radius: 10;
+}
+#chartline {
+    -fx-padding: 30px;
+}
+
+.chart-title {
+    -fx-text-fill: #feffff;
+    -fx-effect: dropshadow( three-pass-box , rgba(181, 152, 231, 0.66), 20 , 0.0 , 0 , 0 );
+    -fx-font-size: 13pt;
+    -fx-padding: 0;
+}
+.axis {
+    -fx-font-weight: 300;
+    -fx-tick-label-fill: white;
+    -fx-font-family: "Euclid Flex";
+    -fx-tick-length: 10;
+    -fx-minor-tick-length: 0;
+    -fx-effect: dropshadow( three-pass-box , rgba(0, 0, 0, 0.4), 20 , 0.0 , 0 , 0 );
+}
+
+.chart-legend {
+    -fx-background-color: rgba(24, 38, 81, 0.5);
+    -fx-padding: 5 35 5 35;
+    -fx-background-radius: 10;
+}
+
+.chart-legend-item-symbol{
+    -fx-background-radius: 20;
+}
+
+.chart-legend-item{
+    -fx-text-fill: white;
+    -fx-font-weight: 300;
+    -fx-font-family: "Euclid Flex";
+    -fx-effect: dropshadow( three-pass-box , rgba(195, 166, 232, 0.55), 20 , 0.0 , 0 , 0 );
+}
+
+.chart-plot-background {
+    -fx-background-color: transparent;
+}
+.chart-vertical-grid-lines {
+    -fx-stroke: transparent;
+}
+.chart-horizontal-grid-lines {
+    -fx-stroke: transparent;
+}
+.chart-alternative-row-fill {
+    -fx-fill: transparent;
+    -fx-stroke: transparent;
+    -fx-stroke-width: 0;
+}
+
+.axis:left {-fx-border-color: transparent #ddbaff transparent transparent;
+-fx-border-width: 3px;}
+.axis:bottom{-fx-border-color: #ddbaff transparent transparent;
+    -fx-border-width: 3px;}
+
+#ico {
+    -fx-background-color: #c4a5fa;
+    -fx-text-fill: white;
+    -fx-font-weight: 700;
+    -fx-font-family: "Euclid Flex";
+    -fx-font-size: 12;
+    -fx-alignment: center;
+    -fx-background-radius: 10;
+    -fx-effect: dropshadow( three-pass-box , rgba(195, 166, 232, 0.64), 20 , 0.0 , 0 , 0 );
+}
+
+#acc-name {
+    -fx-text-fill: white;
+    -fx-font-weight: 700;
+    -fx-font-family: "Euclid Flex";
+    -fx-font-size: 14;
+    -fx-effect: dropshadow( three-pass-box , rgba(195, 166, 232, 0.64), 20 , 0.0 , 0 , 0 );
+}
+
+#acc-place {
+    -fx-text-fill: white;
+    -fx-font-weight: 700;
+    -fx-font-family: "Euclid Flex";
+    -fx-font-size: 12;
+    -fx-opacity: 0.7;
+}
+
+#hide {
+    -fx-padding: 5;
+}
+#hide:hover {
+    -fx-background-color: rgba(24, 38, 81, 0.5);
+}
+
+#close {
+    -fx-padding: 5;
+}
+#close:hover {
+    -fx-background-color: #cc0000;
+}
