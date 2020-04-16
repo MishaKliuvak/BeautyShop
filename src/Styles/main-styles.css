@@ -49,7 +49,7 @@
     -fx-text-fill: #c8a8ff;
     -fx-effect: dropshadow( three-pass-box , #c8a8ff, 35 , 0.0 , 0 , 0 )
 }
-.password-field, .text-field {
+#emTF, #psTF {
     -fx-background-color: #354483;
     -fx-font-family: "Euclid Flex";
     -fx-padding: 0px 50px 0px;
@@ -64,7 +64,7 @@
     -fx-background-radius: 0 ;
 }
 
-.password-field:focused, .text-field:focused {
+#emTF:focused, #psTF:focused {
     #email-image:focused;
     -fx-text-fill: #c8a8ff;
     -fx-prompt-text-fill: #c8a8ff;
@@ -142,7 +142,12 @@
     visibility: hidden;
 }
 
+
 .scroll-bar:vertical .thumb {
+    -fx-background-color: #34427f;
+}
+
+.scroll-bar:horizontal .thumb {
     -fx-background-color: #34427f;
 }
 
@@ -268,8 +273,6 @@
 .chart-pie-label { /*this is what you need for labels*/
     -fx-fill: white;
     -fx-font-size: 1em;
-
-
 }
 
 #stat-descr {
@@ -357,16 +360,34 @@
 }
 
 #chartline {
-    -fx-padding: 10px;
     -fx-background-color: rgba(24, 38, 81, 0.25);
     -fx-background-radius: 20;
-    -fx-border-width: 0 0 3 0;
-    -fx-border-color:  #ddbaff;
+    -fx-border-width: 0 0 4 0;
+    -fx-border-color:  #947dfb;
     -fx-border-radius: 10;
 }
 #chartline {
-    -fx-padding: 30px;
+    -fx-padding: 20px;
 }
+.default-color0.chart-series-line { -fx-stroke: #947dfb;
+    -fx-effect: dropshadow( three-pass-box , rgba(181, 152, 231, 0.66), 20 , 0.0 , 0 , 0 );}
+.default-color1.chart-series-line { -fx-stroke: #ffb28f;
+    -fx-effect: dropshadow( three-pass-box , rgba(255, 178, 143, 0.66), 20 , 0.0 , 0 , 0 );}
+.default-color2.chart-series-line { -fx-stroke: #75eab2;
+    -fx-effect: dropshadow( three-pass-box , rgba(117, 234, 178, 0.66), 20 , 0.0 , 0 , 0 );}
+.default-color3.chart-series-line { -fx-stroke: #fa92ba;
+    -fx-effect: dropshadow( three-pass-box , rgba(250, 146, 186, 0.66), 20 , 0.0 , 0 , 0 );}
+.default-color4.chart-series-line { -fx-stroke: #de93ff;
+    -fx-effect: dropshadow( three-pass-box , rgba(222, 147, 255, 0.66), 20 , 0.0 , 0 , 0 );}
+.default-color5.chart-series-line { -fx-stroke: #ffe18a;
+    -fx-effect: dropshadow( three-pass-box , rgba(255, 225, 138, 0.66), 20 , 0.0 , 0 , 0 );}
+
+.default-color0.chart-line-symbol { -fx-background-color: #947dfb, #ffffff;}
+.default-color1.chart-line-symbol { -fx-background-color: #ffb28f, #ffffff;}
+.default-color2.chart-line-symbol { -fx-background-color: #75eab2, #ffffff;}
+.default-color3.chart-line-symbol { -fx-background-color: #fa92ba, #ffffff;}
+.default-color4.chart-line-symbol { -fx-background-color: #de93ff, #ffffff;}
+.default-color5.chart-line-symbol { -fx-background-color: #ffe18a, #ffffff;}
 
 .chart-title {
     -fx-text-fill: #feffff;
@@ -388,7 +409,9 @@
     -fx-padding: 5 35 5 35;
     -fx-background-radius: 10;
 }
-
+.axis-label {
+    -fx-text-fill: #4682b4;
+}
 .chart-legend-item-symbol{
     -fx-background-radius: 20;
 }
@@ -459,4 +482,304 @@
 }
 #close:hover {
     -fx-background-color: #cc0000;
+}
+
+#titles {
+    -fx-text-fill: rgb(255, 255, 255);
+    -fx-font-weight: 300;
+    -fx-font-family: "Euclid Flex";
+    -fx-font-size: 13;
+    -fx-padding: 0 0 0 10;
+}
+
+#title-top {
+    -fx-border-width: 0 0 2 0;
+    -fx-padding: 10 0 10 0;
+    -fx-border-color: #c3a6e8;
+}
+
+#scrl {
+    -fx-background-color: rgba(24, 38, 81, 0.28);
+    -fx-padding: 10 20 10 20;
+    -fx-background-radius: 10 10 0 0;
+    -fx-border-width: 0 0 4 0;
+    -fx-border-color: #c3a6e8;
+}
+
+#name-table {
+    -fx-text-fill: white;
+    -fx-font-weight: 700;
+    -fx-padding: 0 0 0 10;
+    -fx-font-family: "Euclid Flex";
+    -fx-font-size: 14;
+}
+
+#em-table, #ser-table, #work-count {
+    -fx-text-fill: white;
+    -fx-font-weight: 300;
+    -fx-font-family: "Euclid Flex";
+    -fx-font-size: 13;
+}
+#work-count {
+    -fx-padding: 0 0 0 19;
+}
+
+#par  {
+    -fx-background-color: rgba(24, 38, 81, 0.39);
+    -fx-padding: 10;
+    -fx-background-radius: 10;
+}
+#no-par  {
+    -fx-padding: 0 10 0 10;
+}
+
+#icons {
+    -fx-opacity: 0.5;
+    -fx-scale-x: 0.9;
+    -fx-scale-y: 0.9;
+    -fx-scale-z: 0.9;
+}
+
+#icons:hover {
+    -fx-opacity: 1;
+    -fx-effect: dropshadow( three-pass-box , rgba(255, 255, 255, 0.61), 20 , 0.0 , 0 , 0 );
+    -fx-scale-x: 1.0;
+    -fx-scale-y: 1.0;
+    -fx-scale-z: 1.0;
+}
+
+#par1  {
+    -fx-background-color: rgba(24, 38, 81, 0.39);
+    -fx-padding: 0 10 0 10;
+    -fx-background-radius: 10;
+}
+#no-par1  {
+    -fx-padding: 0 10 0 10;
+}
+
+#calendar-item {
+    -fx-padding: 5;
+    -fx-background-color: transparent;
+    -fx-border-color: rgba(24, 38, 81, 0.37);
+    -fx-border-width: 0;
+}
+
+#full-calendar {
+    -fx-background-color: rgba(24, 38, 81, 0.39);
+    -fx-border-color: #c3a6e8;
+    -fx-border-width: 0 0 4 0;
+    -fx-padding: 10 20 20 20;
+}
+
+
+#days {
+    -fx-background-color: rgba(24, 38, 81, 0.39);
+    -fx-padding: 20 20 0 20;
+    -fx-background-radius: 20 20 0 0;
+}
+
+#day-names {
+    -fx-text-fill: white;
+    -fx-font-weight: 300;
+    -fx-font-family: "Euclid Flex";
+    -fx-font-size: 13;
+    -fx-border-color: rgba(121, 157, 255, 0.84);
+   -fx-border-width: 0 0 2 0;
+    -fx-effect: dropshadow( three-pass-box , rgba(255, 255, 255, 0.44), 20 , 0.0 , 0 , 0 );
+}
+
+#day-item {
+    -fx-fill: white;
+    -fx-font-weight: 300;
+    -fx-font-family: "Euclid Flex";
+    -fx-font-size: 13;
+    -fx-opacity: 0.5;
+}
+
+#month-changer {
+     -fx-background-color: transparent;
+     -fx-font-family: "Euclid Flex";
+     -fx-font-weight: 700;
+     -fx-background-radius: 150;
+     -fx-text-alignment: center;
+     -fx-text-fill: white;
+     -fx-padding: 5 10 5 10;
+}
+
+#month-changer:hover {
+    -fx-background-color: #bb95ff;
+    -fx-text-fill: white;
+    -fx-effect: dropshadow( two-pass-box , #a68cd6, 40, 0.0 , 0 , 0 );
+}
+
+#month-name{
+    -fx-text-fill: white;
+    -fx-font-weight: 700;
+    -fx-font-family: "Euclid Flex";
+    -fx-font-size: 19;
+    -fx-effect: dropshadow( three-pass-box , rgba(0, 0, 0, 0.23), 20 , 0.0 , 0 , 0 );
+    -fx-padding: 15;
+}
+
+#cal-item-time {
+    -fx-text-fill: #bb95ff;
+    -fx-font-weight: 700;
+    -fx-font-family: "Euclid Flex";
+    -fx-border-color: #c3a6e8;
+    -fx-border-width: 0 0 0 2;
+    -fx-padding: 0 0 0 2;
+    -fx-font-size: 10;
+    -fx-effect: dropshadow( two-pass-box , rgba(166, 140, 214, 0.26), 10, 0.0 , 0 , 0 );
+}
+
+#cal-item-seanse {
+    -fx-text-fill: white;
+    -fx-font-weight: 300;
+    -fx-font-family: "Euclid Flex";
+    -fx-font-size: 11;
+}
+
+#top-name {
+    -fx-text-fill: white;
+    -fx-font-weight: 700;
+    -fx-padding: 10 0 10 0;
+    -fx-font-family: "Euclid Flex";
+    -fx-font-size: 11;
+}
+
+#top-count {
+    -fx-text-fill: white;
+    -fx-font-weight: 300;
+    -fx-font-family: "Euclid Flex";
+    -fx-font-size: 11;
+    -fx-border-width: 2;
+    -fx-border-color: white;
+    -fx-padding: 0 10 0 10;
+    -fx-border-radius: 20;
+    -fx-effect: dropshadow( three-pass-box , rgba(181, 152, 231, 0.45), 10 , 0.0 , 0 , 0 );
+}
+
+#title-tops {
+    -fx-font-family: "Euclid Flex";
+    -fx-font-weight: 700;
+    -fx-font-size: 13pt;
+    -fx-text-fill: white;
+    -fx-border-width: 0 0 0 5;
+    -fx-padding: 0 0 0 10;
+    -fx-border-color: #c3a6e8;
+    -fx-effect: dropshadow( three-pass-box , rgba(0, 0, 0, 0.23), 20 , 0.0 , 0 , 0 );
+
+}
+.chart-bar {
+    -fx-background-color: rgba(117, 234, 178, 0.05);
+    -fx-border-color: #75eab2 #75eab2
+    transparent #75eab2;
+    -fx-background-radius: 0;
+    -fx-effect: dropshadow( three-pass-box , rgba(117, 234, 178, 0.45), 20 , 0.0 , 0 , 0 );
+    -fx-background-position: left center;
+}
+
+#chart-bar {
+    -fx-padding: 10px;
+    -fx-background-color: rgba(24, 38, 81, 0.25);
+    -fx-background-radius: 20;
+    -fx-border-width: 0 0 4 0;
+    -fx-border-color: #947dfb;
+    -fx-border-radius: 10;
+}
+
+#chart {
+    -fx-padding: 10px;
+    -fx-background-color: rgba(24, 38, 81, 0.16);
+    -fx-background-radius: 20;
+    -fx-border-width: 0 0 4 0;
+    -fx-border-color: #947dfb;
+    -fx-border-radius: 10;
+}
+
+#search-w {
+    -fx-background-color: rgba(53, 68, 131, 0.5);
+    -fx-background-radius: 0;
+    -fx-font-family: "Euclid Flex";
+    -fx-padding: 0px 10px 0px;
+    -fx-font-weight: 300;
+    -fx-text-fill: #c8a8ff;
+    -fx-font-size: 8pt;
+
+    -fx-prompt-text-fill: #4c5c9c;
+}
+
+#search-w:focused {
+    -fx-background-radius: 20;
+    -fx-text-fill: #c8a8ff;
+    -fx-prompt-text-fill: #c8a8ff;
+}
+
+.combo-box .list-cell
+{
+    -fx-background-color: transparent;
+    -fx-font-family: "Euclid Flex";
+    -fx-padding: 0px 5px 0px;
+    -fx-font-weight: 300;
+    -fx-text-fill: #c8a8ff;
+    -fx-font-size: 8pt;
+}
+
+.combo-box-popup .list-view
+{
+    -fx-background-color: rgba(53, 68, 131, 0.8);
+    -fx-font-family: "Euclid Flex";
+    -fx-font-weight: 300;
+    -fx-text-fill: #c8a8ff;
+    -fx-font-size: 8pt;
+}
+
+.combo-box-popup .list-view .list-cell
+{
+    -fx-padding: 4 0 4 10;
+    -fx-background-color: transparent;
+}
+
+.combo-box-popup .list-view .list-cell:filled:selected, .combo-box-popup .list-view .list-cell:filled:selected:hover
+{
+    -fx-text-fill: -fx-selection-bar-text;
+}
+
+.combo-box-popup .list-view .list-cell:filled:hover
+{
+    -fx-background-color: rgb(53, 68, 131);
+    -fx-text-fill: white;
+}
+
+.combo-box-base
+{
+    -fx-background-color: rgba(53, 68, 131, 0.5);
+    -fx-font-family: "Euclid Flex";
+    -fx-padding: 0px 10px 0px;
+    -fx-font-weight: 300;
+    -fx-font-size: 8pt;
+}
+
+.combo-box-base:hover
+{
+    -fx-background-color: rgb(53, 68, 131);
+}
+
+.combo-box .arrow{
+    -fx-background-color: rgba(255, 255, 255, 0.2);
+}
+
+#change-chart {
+    -fx-background-radius: 30;
+    -fx-background-color: rgb(53, 68, 131);
+    -fx-text-fill: white;
+
+    -fx-font-family: "Euclid Flex";
+    -fx-font-weight: 700;
+}
+
+#change-chart:selected {
+    -fx-text-fill: #354483;
+    -fx-background-color: white;
+    -fx-effect: dropshadow( two-pass-box , #917dbf, 25, 0.0 , 0 , 0 );
 }

@@ -1,6 +1,10 @@
 package Views;
 
 import Constants.Const;
+import Views.AdminPane.FullCalendarView;
+import Views.AdminPane.ServicesList;
+import Views.AdminPane.StatisticsForAdmin;
+import Views.AdminPane.Workers;
 import Views.ClientPane.*;
 import animatefx.animation.ZoomIn;
 import javafx.scene.Node;
@@ -114,7 +118,7 @@ public class UserMenu {
             menuButtons.getChildren().add(entry.getValue());
         }
 
-        loadIcons();
+        loadIcons(typeOfUser.toLowerCase());
         startSettings();
     }
 
@@ -130,10 +134,10 @@ public class UserMenu {
             case "worker":
                 break;
             case "Admin":
-                content.add(PersonalAccountPane.getInstance().mainPane());
-                content.add(ServicesPane.getInstance().mainServicesPane());
-                content.add(HistoryPane.getInstance().mainPane());
-                content.add(BonusesPane.getInstance().mainServicesPane());
+                content.add(Workers.getInstance().mainPane());
+                content.add(ServicesList.getInstance().mainPane());
+                content.add(FullCalendarView.getInstance().getView());
+                content.add(StatisticsForAdmin.getInstance().getPane());
                 break;
             default:
                 break;
@@ -158,17 +162,13 @@ public class UserMenu {
         new ZoomIn(content.get(0)).play();
     }
 
-    private void loadIcons() {
-        File path = new File(getClass().getClassLoader().getResource("Resources/account/client/unselect").getFile());
+    private void loadIcons(String status) {
+        File path = new File(getClass().getClassLoader().getResource("Resources/account/"+ status +"/unselect").getFile());
         File[] files = path.listFiles();
         for(File img:files){
             unsImg.add(new Image(img.toURI().toString()));
         }
-        for(int i=0; i<10; i++){
-            System.out.println((i>3 && i<7)? "A" : ((i>7 && i<9) ? "B" :"C"));
-        }
-
-        path = new File(getClass().getClassLoader().getResource("Resources/account/client/select").getFile());
+        path = new File(getClass().getClassLoader().getResource("Resources/account/"+ status +"/select").getFile());
         files = path.listFiles();
         for(File img:files){
             selectImg.add(new Image(img.toURI().toString()));

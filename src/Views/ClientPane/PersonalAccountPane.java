@@ -32,11 +32,11 @@ public class PersonalAccountPane {
     private Label moneyLbl, moneyNum, falleLbl, falleNum, presentLbl, presentNum, date,title,description, nameLbl, dateLbl, ratingLbl, reviewLbl;
     private ImageView moneyIv, presentIv, faleIv, moneyIco, presentIco, faleIco, imv, edit, photo, bgStars, frontStars;
     private ObservableList<PieChart.Data> pieChartData;
+    private PieChart chart;
     private ToggleButton remindersBtn, statisticBtn, reviewsBtn;
     private ToggleGroup group;
     private Button delete;
     private VBox reminders, reviews;
-    private PieChart chart;
     private Rectangle circle;
     private Region rectangle;
 
@@ -194,7 +194,6 @@ public class PersonalAccountPane {
 
     private Pane staticsPane(){
         statisticPane = new Pane();
-
 
         presentIv = new ImageView(new Image("Resources/account/services/1.png"));
         presentIv.relocate(490,70);

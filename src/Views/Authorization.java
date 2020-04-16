@@ -1,6 +1,7 @@
 package Views;
 
 import Constants.Const;
+import Views.AdminPane.Workers;
 import Views.ClientPane.IconsMenu;
 import animatefx.animation.*;
 import javafx.application.Platform;
@@ -102,6 +103,7 @@ public class Authorization {
         name.setPrefWidth(629);
 
         emailTF = new TextField();
+        emailTF.setId("emTF");
         emailTF.setPrefSize(336, 47);
         emailTF.setPromptText("E-mail");
         emailTF.setFocusTraversable(false);
@@ -120,6 +122,7 @@ public class Authorization {
         nEmailIv.setId("email-image");
 
         passwordTF = new PasswordField();
+        emailTF.setId("psTF");
         passwordTF.setPrefSize(336, 47);
         passwordTF.setFocusTraversable(false);
         passwordTF.setPromptText("Password");
@@ -137,6 +140,7 @@ public class Authorization {
         nPasswordIv.relocate(passwordTF.getLayoutX() + 8, passwordTF.getLayoutY() + 6);
 
         retunrPasswordTF = new PasswordField();
+        emailTF.setId("psTF");
         retunrPasswordTF.setPrefSize(336, 47);
         retunrPasswordTF.setFocusTraversable(false);
         retunrPasswordTF.setPromptText("Return password");
@@ -181,6 +185,7 @@ public class Authorization {
 
         emailTF = new TextField();
         emailTF.setPrefSize(336, 47);
+        emailTF.setId("emTF");
         emailTF.setPromptText("E-mail");
         emailTF.setFocusTraversable(false);
         emailTF.relocate((629 - 336) / 2, name.getLayoutY() + name.getHeight() + 70);
@@ -198,6 +203,7 @@ public class Authorization {
         emailIv.setId("email-image");
 
         passwordTF = new PasswordField();
+        passwordTF.setId("psTF");
         passwordTF.setPrefSize(336, 47);
         passwordTF.setFocusTraversable(false);
         passwordTF.setPromptText("Password");
@@ -228,7 +234,6 @@ public class Authorization {
 
         authorizationPane.layout();
         Platform.runLater(()->{
-            System.out.println(authorizationPane.getHeight());
             authorizationPane.setLayoutY((Const.SCREEN_HEIGHT - authorizationPane.getHeight()) / 2);
             forgot.setLayoutX((629 - forgot.getWidth()) / 2);
             forgot.setLayoutY(signInBtn.getLayoutY() + signInBtn.getHeight() + 10);
